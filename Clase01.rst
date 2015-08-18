@@ -35,9 +35,9 @@ Clase 01 - PII 2015
 Introducción
 ============
 
-	- Brinda al estudiante herramientas de programación de microcontroladores para el procesamiento digital de señales.
-	- Conocimientos sobre programación de hardware específico para tratamiento de señales.
-	- Complementa lo desarrollado en "Teoría de Señales y Sistemas Lineales" y "Tratamiento Digital de Señales". 
+- Brinda al estudiante herramientas de programación de microcontroladores para el procesamiento digital de señales.
+- Conocimientos sobre programación de hardware específico para tratamiento de señales.
+- Complementa lo desarrollado en "Teoría de Señales y Sistemas Lineales" y "Tratamiento Digital de Señales". 
 
 
 Familias de microcontroladores Microchip
