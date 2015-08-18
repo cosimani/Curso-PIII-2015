@@ -9,12 +9,12 @@ Clase 01 - PII 2015
     :Correo: cosimani@ubp.edu.ar
     :Fecha: 7 de agosto de 2015
     :Regularidad: 
-  - 2 prácticos parciales (que pueden ser avances del trabajo final)
-  - Individual o Grupos de 2 o 3 alumnos
+  	- 2 prácticos parciales (que pueden ser avances del trabajo final)
+  	- Individual o Grupos de 2 o 3 alumnos
     :Final:
 	- Entrega de un trabajo práctico integrador.
     :Temas principales: 
-  - Arquitectura de los DSP (Digital Signal Processor)
+  	- Arquitectura de los DSP (Digital Signal Processor)
 	- Programación en C de los dsPIC30F y dsPIC33F
 	- Utilización de software para la programación y simulación
 	- Utilización de placa de desarrollo
