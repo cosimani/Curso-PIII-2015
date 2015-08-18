@@ -5,15 +5,15 @@
 Clase 01 - PII 2015
 ===================
 
-    :Autor: César Osimani
-    :Correo: cosimani@ubp.edu.ar
-    :Fecha: 7 de agosto de 2015
-    :Regularidad: 
-  	- 2 prácticos parciales (que pueden ser avances del trabajo final)
+:Autor: César Osimani
+:Correo: cosimani@ubp.edu.ar
+:Fecha: 7 de agosto de 2015
+:Regularidad: 
+	- 2 prácticos parciales (que pueden ser avances del trabajo final)
   	- Individual o Grupos de 2 o 3 alumnos
-    :Final:
+:Final:
 	- Entrega de un trabajo práctico integrador.
-    :Temas principales: 
+:Temas principales: 
   	- Arquitectura de los DSP (Digital Signal Processor)
 	- Programación en C de los dsPIC30F y dsPIC33F
 	- Utilización de software para la programación y simulación
@@ -21,7 +21,7 @@ Clase 01 - PII 2015
 	- Puertos de entrada, Conversor A/D, muestreo
 	- Puertos de salida, Conversor D/A
 	- Generador de señales, FFT, Filtros
-    :Ideas para trabajo práctico final:
+:Ideas para trabajo práctico final:
 	- Control a distancia por tonos DTMF  (Dual-Tone Multi-Frequency) 
 	- Efectos para guitarra eléctrica
 	- Distorsión de la voz en tiempo real para hablar sin ser reconocido
