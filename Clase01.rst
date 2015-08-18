@@ -42,51 +42,34 @@ Introducción
 
 Familias de microcontroladores Microchip
 ----------------------------------------
-Familias de microcontroladores Microchip
-========================================
 
-MCU (MicroController Unit)
+*MCU (MicroController Unit)*
 	- Microcontroladores clásicos
 	- Las operaciones complejas las realiza en varios ciclos
 	
-DSP (Digital Signal Processor)
+*DSP (Digital Signal Processor)*
 	- Microcontroladores para procesamiento de señales
 	- Las operaciones complejas las realiza en un sólo ciclo.
 
-DSC (Digital Signal Controller)
+*DSC (Digital Signal Controller)*
 	- Híbrido MCU/DSP
 	- Controlador digital de señales
 
-
-
-
-
-DSP = Procesadores Digitales de Señales
+*dsPIC (Nombre que utiliza Microchip para referirse a sus DSC)
 	- PIC de 16 bits (registros de 16 bits)
 	- Estudiaremos principalmente las familias:
-				- dsPIC30F - dsPIC33F
-
-	- Se pueden conseguir: 
-				- dsPIC30F4013 (40 pines)
-				- dsPIC30F2010 (28 pines)
-				- dsPIC33FJ32MC202 (28 pines)
-
-
-DSC = Controladores Digitales de Señales
-dsPIC = Nombre genérico para referirse a DSC
-
-
-
-
-
-
-
+		- dsPIC30F y dsPIC33F
+	- Se pueden conseguir en Córdoba los siguientes: 
+		- dsPIC30F4013 (40 pines)
+		- dsPIC30F2010 (28 pines)
+		- dsPIC33FJ32MC202 (28 pines)
 
 Softwares
+---------
 	- Proteus
 	- mikroC para dsPIC
 
-Proteus
+*Proteus*
 	- Conjunto de programas para diseño y simulación
 	- Desarrollado por Labcenter Electronics (http://www.labcenter.com)
 	- Versión actual: 8.3
@@ -94,17 +77,17 @@ Proteus
 	- Versión 7.9 para compartir. Estable para XP, Windows 7 y Windows 8
 	- Herramientas principales: ISIS y ARES
 
-ISIS (Intelligent Schematic Input System - Sistema de Enrutado de Esquemas Inteligente)
+*ISIS (Intelligent Schematic Input System - Sistema de Enrutado de Esquemas Inteligente)*
 	- Permite diseñar el circuito con los componentes.
 	- Permite el uso de microcontroladores grabados con nuestro propio programa.
 	- Contiene herramientas de medición, fuentes de alimentación y generadores de señales.
 	- Puede simular en tiempo real mediante VSM (Virtual System Modeling -Sistema Virtual de Modelado).
 
-ARES (Advanced Routing and Editing Software - Software de Edición y Ruteo Avanzado)
+*ARES (Advanced Routing and Editing Software - Software de Edición y Ruteo Avanzado)*
 	- Permite ubicar los componentes y rutea automáticamente para obtener el PCB (Printed Circuit Board).
 	- Permite ver una visualización 3D de la placa con sus componentes.
 
-mikroC para dsPIC
+*mikroC para dsPIC*
 	- Compilador C para dsPIC
 	- Incluye bibliotecas de programación
 	- Última versión 6.2 (febrero 2014)
