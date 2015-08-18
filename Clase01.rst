@@ -21,7 +21,7 @@ Clase 01 - PII 2015
 	- Puertos de entrada, Conversor A/D, muestreo
 	- Puertos de salida, Conversor D/A
 	- Generador de señales, FFT, Filtros
-	  :Ideas para trabajo práctico final:
+    :Ideas para trabajo práctico final:
 	- Control a distancia por tonos DTMF  (Dual-Tone Multi-Frequency) 
 	- Efectos para guitarra eléctrica
 	- Distorsión de la voz en tiempo real para hablar sin ser reconocido
