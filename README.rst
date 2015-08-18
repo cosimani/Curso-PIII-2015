@@ -14,11 +14,11 @@ Créditos
 
 Parte de este material ha sido inspirado y/o adaptado de múltiples fuentes:
 
+* `Instructivo para escribir y compilar un programa con mikroC: <http://www.mikroe.com/downloads/get/387>`_
+* `Aplicativos para desarrollo en C (mikroC for dsPIC) <http://www.mikroe.com/downloads/get/291/mikroc_pro_dspic_v620.zip>`_
+* `Hojas de datos de Microchip <https://www.microchip.com/datasheets>`_
+* `Libro: Microcontroladores dsPIC. Diseño práctico de aplicaciones (disponible en biblioteca de UBP) <http://www.amazon.es/Microcontroladores-dsPIC-Dise%C3%B1o-pr%C3%A1ctico-aplicaciones/dp/8448151569>`_
 
-* `Curso de C++ Zator Systems <http://www.zator.com/Cpp/>`_
-* `Aplicativos para desarrollo con Qt/C++ <http://www.qt.io/download/>`_
-* `Tutoriales y ejemplos con la biblioteca Qt <http://doc.qt.io/qt-5/qtexamplesandtutorials.html>`_
-* `Libro: El lenguaje de programación C++ de Bjarne Stroustrup (disponible en biblioteca de UBP) <http://www.amazon.es/El-lenguaje-programaci%C3%B3n-Bjarne-Stroustrup/dp/847829046X>`_
 
 
 
