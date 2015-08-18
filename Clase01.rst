@@ -56,9 +56,13 @@ Familias de microcontroladores Microchip
 	- Controlador digital de señales
 
 *dsPIC (Nombre que utiliza Microchip para referirse a sus DSC)*
-- PIC de 16 bits (registros de 16 bits)
-- Estudiaremos las familias dsPIC30F y dsPIC33F
-- Se pueden conseguir en Córdoba los siguientes: 
+	- PIC de 16 bits (registros de 16 bits)
+	- Estudiaremos las familias dsPIC30F y dsPIC33F
+	- Se pueden conseguir en Córdoba los siguientes: 
+	* Lista con viñetas
+	* Lista con viñetas
+	#. Lista numerada
+	#. Lista numeradas
 	- dsPIC30F4013 (40 pines)
  	- dsPIC30F2010 (28 pines)
 	- dsPIC33FJ32MC202 (28 pines)
