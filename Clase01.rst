@@ -93,86 +93,24 @@ Softwares
 	- Desarrollado por MikroElektronika ( http://www.mikroe.com/mikroc/dspic )
 	- MikroElektronika también dispone de placas de desarrollo como la Easy dsPIC que disponemos en el Lab
 
-Características principales de los DSP
-**************************************
 
-	- Arquitectura Harvard: Tiene memorias independientes para:
-		- Memoria de programa
-		- Memoria de datos: A su vez tiene dos espacios independientes para acceso en paralelo (X e Y).
-		- Mejora la arquitectura de von Neumann: Programa y datos en la misma memoria
-
-	- Disponen de instrucciones que resuelven algoritmos para procesamiento de señales.
-	- Modos de direccionamiento sofisticados.
-	- Interrupciones con niveles de prioridad.
-
- 	- La arquitectura Harvard posee buses independientes para instrucciones y datos.
-
-ALU (Arithmetic Logic Unit): Realiza operaciones aritméticas
-
-Arquitectura de la CPU (algunos datos, varía mucho de un dsPIC a otro)
-
-- Memoria de datos
-	- RAM (SDRAM: Synchronous Dynamic Random-Access Memory)
-	- Se estructura en dos espacios X e Y
-	- 8 KBytes o 4 K palabras de 16 bits
-	
-- Memoria de programa
-	- Tipo Flash con tamaño de 24 bits por posición
-	- Aloja las instrucciones
-	- 48 KBytes
-
-- Camino de datos
-	- Donde se ejecutan las instrucciones
-	- Basado en un banco de 16 registros de trabajo (W)
-	- 16 bits de longitud cada registro
-	- Los registros W alimentan una ALU
-
-E/S
-	- Tiene 7 ports (A, B, C, D, E, F y G)
-
-Periféricos
-	- Conversor A/D
-	- PWM
-	- Comunicación (UART, SPI, etc)
-	- Osciladores
-
-Periféricos integrados (para dsPIC30F y dsPIC33F)
-	- Analógicos
-		- Conversor A/D de 10 bits 
-		- Conversor A/D de 12 bits 
-		- 100 ksps
-
-	- Digitales
-		- 5 temporizadores de 16 bits
-		- PWM
-
-	- Comunicación
-		- 2 UART (Universal Asynchronous Receiver-Transmitter)
-		- 2 SPI (Serial Peripheral Interface)
-		- I2C (Inter-Integrated Circuit)
-		- 2 CAN (Controller Area Network)
-
-	
-
-
-
-
-
-
-
-
-
-Ejercicio 1: Regulador de tensión para los dsPIC33F
+Ejercicio 1:
+************
+Regulador de tensión para los dsPIC33F
 	- Alimentación desde un conector USB
 	- Utilizar herramientas de medición para asegurarse de los voltajes obtenidos.
 
-Ejercicio 2: Alimentar el dsPIC33FJ32MC202
+Ejercicio 2: 
+************
+Alimentar el dsPIC33FJ32MC202
 	- Conectar el Master Clear
 	- Utilizar capacitores de desacoplo
 	- Conectar un cristal de cuarzo
 	- Grabarle un programa simple (ver ejercicio 3)
 
-Ejercicio 3: Crear un programa "Hola mundo" para el dsPIC33FJ32MC202
+Ejercicio 3: 
+************
+Crear un programa "Hola mundo" para el dsPIC33FJ32MC202
 	- Escribir una función void configuracionInicial() para configurar el puerto RB0 como salida
 	- En la función main encender y apagar un LED en RB0 cada 1 segundo
 
@@ -233,6 +171,7 @@ void main() {
 }
 
 Ejercicio 4:
+************
 - Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
 
 	Por ejemplo:
