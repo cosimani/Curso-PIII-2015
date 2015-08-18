@@ -69,29 +69,29 @@ Softwares
 - mikroC para dsPIC
 
 *Proteus*
-- Conjunto de programas para diseño y simulación
-- Desarrollado por Labcenter Electronics (http://www.labcenter.com)
-- Versión actual: 8.3
-- Versión 8.1 para compartir. Algunos problemas con Windows 7
-- Versión 7.9 para compartir. Estable para XP, Windows 7 y Windows 8
-- Herramientas principales: ISIS y ARES
+	- Conjunto de programas para diseño y simulación
+	- Desarrollado por Labcenter Electronics (http://www.labcenter.com)
+	- Versión actual: 8.3
+	- Versión 8.1 para compartir. Algunos problemas con Windows 7
+	- Versión 7.9 para compartir. Estable para XP, Windows 7 y Windows 8
+	- Herramientas principales: ISIS y ARES
 
 *ISIS (Intelligent Schematic Input System - Sistema de Enrutado de Esquemas Inteligente)*
-- Permite diseñar el circuito con los componentes.
-- Permite el uso de microcontroladores grabados con nuestro propio programa.
-- Contiene herramientas de medición, fuentes de alimentación y generadores de señales.
-- Puede simular en tiempo real mediante VSM (Virtual System Modeling -Sistema Virtual de Modelado).
+	- Permite diseñar el circuito con los componentes.
+	- Permite el uso de microcontroladores grabados con nuestro propio programa.
+	- Contiene herramientas de medición, fuentes de alimentación y generadores de señales.
+	- Puede simular en tiempo real mediante VSM (Virtual System Modeling -Sistema Virtual de Modelado).
 
 *ARES (Advanced Routing and Editing Software - Software de Edición y Ruteo Avanzado)*
-- Permite ubicar los componentes y rutea automáticamente para obtener el PCB (Printed Circuit Board).
-- Permite ver una visualización 3D de la placa con sus componentes.
+	- Permite ubicar los componentes y rutea automáticamente para obtener el PCB (Printed Circuit Board).
+	- Permite ver una visualización 3D de la placa con sus componentes.
 
 *mikroC para dsPIC*
-- Compilador C para dsPIC
-- Incluye bibliotecas de programación
-- Última versión 6.2 (febrero 2014)
-- Desarrollado por MikroElektronika ( http://www.mikroe.com/mikroc/dspic )
-- MikroElektronika también dispone de placas de desarrollo como la Easy dsPIC que disponemos en el Lab
+	- Compilador C para dsPIC
+	- Incluye bibliotecas de programación
+	- Última versión 6.2 (febrero 2014)
+	- Desarrollado por MikroElektronika ( http://www.mikroe.com/mikroc/dspic )
+	- MikroElektronika también dispone de placas de desarrollo como la Easy dsPIC que disponemos en el Lab
 
 Características principales de los DSP
 **************************************
