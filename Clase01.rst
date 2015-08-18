@@ -61,7 +61,8 @@ Familias de microcontroladores Microchip
 	- Se pueden conseguir en Córdoba los siguientes: 
 	* dsPIC30F4013 (40 pines)
  	* dsPIC30F2010 (28 pines)
-	* dsPIC33FJ32MC202 (28 pines)
+		* dsPIC33FJ32MC202 (28 pines)
+		* dsPIC33FJ32MC202 (28 pines)
 
 Softwares
 ---------
