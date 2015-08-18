@@ -59,10 +59,9 @@ Familias de microcontroladores Microchip
 	- PIC de 16 bits (registros de 16 bits)
 	- Estudiaremos las familias dsPIC30F y dsPIC33F
 	- Se pueden conseguir en Córdoba los siguientes: 
-	* dsPIC30F4013 (40 pines)
- 	* dsPIC30F2010 (28 pines)
-		* dsPIC33FJ32MC202 (28 pines)
-		* dsPIC33FJ32MC202 (28 pines)
+		dsPIC30F4013 (40 pines)
+ 		dsPIC30F2010 (28 pines)
+		dsPIC33FJ32MC202 (28 pines)
 
 Softwares
 ---------
