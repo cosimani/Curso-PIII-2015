@@ -35,16 +35,9 @@ Clase 01 - PII 2015
 Introducción
 ============
 
-Esta asignatura brinda al estudiante las herramientas de programación de hardware de microcontroladores para realizar el procesamiento digital de señales. 
-Complementa lo desarrollado en las materias "Teoría de Señales y Sistemas Lineales" y "Tratamiento Digital de Señales". 
-Se estudiarán e implementarán algoritmos para el tratamiento y filtrado digital de información de origen analógico y digital.
-
-OBJETIVOS
-- Adquirir conocimientos para implementar sobre hardware sistemas de tratamiento y filtrado digital de información de origen analógico y
-digital.
-- Adquirir conocimientos sobre programación de hardware específico para tratamiento de señales.
-- Reforzar los conocimientos teóricos sobre tratamiento de señales y diseño de filtros.
-
+	- Brinda al estudiante herramientas de programación de microcontroladores para el procesamiento digital de señales.
+	- Conocimientos sobre programación de hardware específico para tratamiento de señales.
+	- Complementa lo desarrollado en "Teoría de Señales y Sistemas Lineales" y "Tratamiento Digital de Señales". 
 
 
 Familias de microcontroladores Microchip
