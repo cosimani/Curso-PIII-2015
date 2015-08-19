@@ -57,8 +57,8 @@ Interrupciones
 
 	}
 
-- *IFS0<15:0>, IFS1<15:0>, IFS2<15:0>*
-- Banderas de solicitud de interrupción. (el software debe borrarlo - hay que hacerlo sino sigue levantando la interrupción).
+- IFS0<15:0>, IFS1<15:0>, IFS2<15:0>
+	- Banderas de solicitud de interrupción. (el software debe borrarlo - hay que hacerlo sino sigue levantando la interrupción).
 
 - IEC0<15:0>, IEC1<15:0>, IEC2<15:0>
 	- Bits de control de habilitación de interrupción.
@@ -66,43 +66,29 @@ Interrupciones
 - IPC0<15:0>... IPC10<7:0>
 	- Prioridades
 
-
-
 - INTCON1<15:0>, INTCON2<15:0>
 	- Control de interrupciones.
 		- INTCON1 contiene el control y los indicadores de estado. 
 		- INTCON2 controla la señal de petición de interrupción externa y el uso de la tabla AIVT.
 
-	- El usuario debe asegurarse de poner en cero las banderas antes de activar una interrupción.
-
 
 Secuencia de interrupción
++++++++++++++++++++++++++
 
 - Las banderas de interrupción se muestrean en el comienzo de cada ciclo de instrucción por los registros IFSx. 
 - Una solicitud de interrupción pendiente (IRQ) se indica mediante la bandera en '1' en un registro IFSx. 
 - La IRQ provoca una interrupción si se encuentra habilitado con IECx. 
-
-
-
 - El IVT contiene las direcciones iniciales de las rutinas de interrupción para cada fuente de interrupción.
 
+Interrupciones externas INT0 INT1 y INT2
 
+.. code-block::
 
-
-
-
-
-
-
-
-
-Interrupciones externas INT0  INT1  INT2
-
-	void detectarInt0() org 0x0014  {
+    void detectarInt0() org 0x0014  {
 								0x0014 - INT0  
 								0x0034 - INT1
 								0x0042 - INT2
-	}
+    }
 
 - Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:
 	INTCON2bits.
