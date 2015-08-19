@@ -2,7 +2,7 @@
 
 .. _rcs_subversion:
 
-Clase 01 - PII 2015
+Clase 01 - PIII 2015
 ===================
 
 :Autor: César Osimani
@@ -108,14 +108,12 @@ Softwares
 	- Escribir una función void configuracionInicial() para configurar el puerto RB0 como salida
 	- En la función main encender y apagar un LED en RB0 cada 1 segundo
 
-*Ejercicio 4*:
-- Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
-	Por ejemplo:
+*Ejercicio 4*: Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
 	- El LED en RB0 que encienda y apague cada 250 ms
 	- El LED en RB1 que encienda y apague cada 133 ms
 
 
-*Proteus (primer proyecto)*
+**Proteus (primer proyecto)**
 
 - New Design
 - Component mode (panel izquierdo)
@@ -133,7 +131,7 @@ Softwares
 - Terminals Mode - Permite agregar tierra, entrada, salida, etc.
 	- GROUND
 
-*Código ejemplo del Hola Mundo*
+**Código ejemplo del Hola Mundo**
 
 .. code-block::
 
