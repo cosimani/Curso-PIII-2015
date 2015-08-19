@@ -95,8 +95,8 @@ Softwares
 
 
 *Ejercicio 1*: Regulador de tensión para los dsPIC33F.
-- Alimentación desde un conector USB
-- Utilizar herramientas de medición para asegurarse de los voltajes obtenidos.
+	- Alimentación desde un conector USB.
+	- Utilizar herramientas de medición para asegurarse de los voltajes obtenidos.
 
 Ejercicio 2: Alimentar el dsPIC33FJ32MC202.
 ***********
