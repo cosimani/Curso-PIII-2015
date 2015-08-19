@@ -114,6 +114,7 @@ Softwares
 
 
 **Proteus (primer proyecto)**
+
 - New Design
 - Component mode (panel izquierdo)
 - P (Pick Device) - permite seleccionar los componentes a utilizar en este proyecto
