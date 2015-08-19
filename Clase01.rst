@@ -98,20 +98,19 @@ Softwares
 	- Alimentación desde un conector USB.
 	- Utilizar herramientas de medición para asegurarse de los voltajes obtenidos.
 
-Ejercicio 2: Alimentar el dsPIC33FJ32MC202.
-***********
+*Ejercicio 2*: Alimentar el dsPIC33FJ32MC202.
 	- Conectar el Master Clear
 	- Utilizar capacitores de desacoplo
 	- Conectar un cristal de cuarzo
 	- Grabarle un programa simple (ver ejercicio 3)
 
-Ejercicio 3: Crear un programa "Hola mundo" para el dsPIC33FJ32MC202.
-***********
+*Ejercicio 3*: Crear un programa "Hola mundo" para el dsPIC33FJ32MC202.
 	- Escribir una función void configuracionInicial() para configurar el puerto RB0 como salida
 	- En la función main encender y apagar un LED en RB0 cada 1 segundo
 
 
 Proteus (primer proyecto)
++++++++++++++++++++++++++
 
 - New Design
 - Component mode (panel izquierdo)
@@ -128,8 +127,6 @@ Proteus (primer proyecto)
 
 - Terminals Mode - Permite agregar tierra, entrada, salida, etc.
 	- GROUND
-
-
 
 - En Vcap/Vdd Core requiere tener un capacitor entre 4.7 y 10 microF de cerámico.
 
