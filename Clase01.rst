@@ -108,9 +108,14 @@ Softwares
 	- Escribir una función void configuracionInicial() para configurar el puerto RB0 como salida
 	- En la función main encender y apagar un LED en RB0 cada 1 segundo
 
+*Ejercicio 4*:
+- Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
+	Por ejemplo:
+	- El LED en RB0 que encienda y apague cada 250 ms
+	- El LED en RB1 que encienda y apague cada 133 ms
 
-Proteus (primer proyecto)
-+++++++++++++++++++++++++
+
+*Proteus (primer proyecto)*
 
 - New Design
 - Component mode (panel izquierdo)
@@ -128,14 +133,7 @@ Proteus (primer proyecto)
 - Terminals Mode - Permite agregar tierra, entrada, salida, etc.
 	- GROUND
 
-*Ejercicio 4*:
-- Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
-	Por ejemplo:
-	- El LED en RB0 que encienda y apague cada 250 ms
-	- El LED en RB1 que encienda y apague cada 133 ms
-
-
-*Código ejemplo del Hola Mundo*:
+*Código ejemplo del Hola Mundo*
 
 .. code-block::
 
@@ -143,10 +141,10 @@ Proteus (primer proyecto)
   	    TRISBbits.TRISB0 = 0;            
   	    LATBbits.LATB0 = 0;    
 
-  		while(1) {
-    		    LATBbits.LATB0 = ~LATBbits.LATB0;       
-    		    Delay_ms(1000);
-  		}
+  	    while(1) {
+    	        LATBbits.LATB0 = ~LATBbits.LATB0;       
+    	        Delay_ms(1000);
+  	    }
 	}
 
 
