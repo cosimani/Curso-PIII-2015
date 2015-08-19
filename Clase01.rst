@@ -114,7 +114,6 @@ Softwares
 
 
 **Proteus (primer proyecto)**
-
 - New Design
 - Component mode (panel izquierdo)
 - P (Pick Device) - permite seleccionar los componentes a utilizar en este proyecto
@@ -127,9 +126,9 @@ Softwares
 	- RES - Resistencia
 	- LED-RED
 	- CRYSTAL
-
 - Terminals Mode - Permite agregar tierra, entrada, salida, etc.
 	- GROUND
+
 
 **Código ejemplo del Hola Mundo**
 
