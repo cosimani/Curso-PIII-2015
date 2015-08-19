@@ -94,25 +94,23 @@ Softwares
 	- MikroElektronika también dispone de placas de desarrollo como la Easy dsPIC que disponemos en el Lab
 
 
-Ejercicio 1:
+Ejercicio 1: Regulador de tensión para los dsPIC33F.
 ************
-Regulador de tensión para los dsPIC33F
 	- Alimentación desde un conector USB
 	- Utilizar herramientas de medición para asegurarse de los voltajes obtenidos.
 
-Ejercicio 2: 
+Ejercicio 2: Alimentar el dsPIC33FJ32MC202.
 ************
-Alimentar el dsPIC33FJ32MC202
 	- Conectar el Master Clear
 	- Utilizar capacitores de desacoplo
 	- Conectar un cristal de cuarzo
 	- Grabarle un programa simple (ver ejercicio 3)
 
-Ejercicio 3: 
+Ejercicio 3: Crear un programa "Hola mundo" para el dsPIC33FJ32MC202.
 ************
-Crear un programa "Hola mundo" para el dsPIC33FJ32MC202
 	- Escribir una función void configuracionInicial() para configurar el puerto RB0 como salida
 	- En la función main encender y apagar un LED en RB0 cada 1 segundo
+
 
 Proteus (primer proyecto)
 
