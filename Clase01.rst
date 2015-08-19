@@ -128,126 +128,26 @@ Proteus (primer proyecto)
 - Terminals Mode - Permite agregar tierra, entrada, salida, etc.
 	- GROUND
 
-- En Vcap/Vdd Core requiere tener un capacitor entre 4.7 y 10 microF de cerámico.
-
-
-
-
-
-
-
-
-Master Clear MCLR
-
-
-
-- Se recomineda R = 10kOhm
-- R1 = 1k  -  C = 100nF
-- D = 1N4007
-
-
-
-- Regulador de tensión 3.3v (esto para los dsPIC33F)
-
-
-
-
-
-
-void main() {
-  TRISBbits.TRISB0 = 0;            
-  LATBbits.LATB0 = 0;    
-
-  while(1) {
-    LATBbits.LATB0 = ~LATBbits.LATB0;       
-    Delay_ms(1000);
-  }
-}
-
-Ejercicio 4:
-************
+*Ejercicio 4*:
 - Programar en RB1 un segundo LED que encienda cada un determinado tiempo distinto al tiempo de RB0.
-
 	Por ejemplo:
-		- El LED en RB0 que encienda y apague cada 250 ms
-		- El LED en RB1 que encienda y apague cada 133 ms
+	- El LED en RB0 que encienda y apague cada 250 ms
+	- El LED en RB1 que encienda y apague cada 133 ms
 
 
-
-
-
-
-
-
-
-
-**Programación Genérica**: Generalizar las funciones para que puedan ser utilizadas en varios casos.
-
-Ventajas:
-	- Reutilización de código.
-	- Fácil mantenimiento de código.
-	- Nos concentramos más en la lógica del sistema.
-
-Desventajas:
-	- Pérdida de interés para los amantes de la programación a bajo nivel.
-	- En C++ requiere el uso de Templates y sobrecarga de operadores, que es dificultoso y poco legible.
-
-**Programación Orientada a Eventos**: La ejecución está determinada por los sucesos que ocurran.
-	- Generalmente el usuario es el que dirige la ejecución del programa.
-	- Básicamente el programa queda bloqueado hasta producirse un evento.
-	- Es la base de la interfaz de usuario.
-
-*Ventajas*:
-	- Mejoras en las interfaces de usuario.
-	- Uso del mouse (o sea, hace tiempo estamos orientados a eventos)
-
-*Desventajas*:
-	- El hilo de ejecución se pierde de vista.
-	- Es un tanto abstracto, se maneja generalmente a alto nivel.
-	- Complicado para manejar los eventos a bajo nivel.
-	
-Plantillas
-==========
-- Separa la estructura del contenido.
-- Permite construir un diseño predefinido
-- Facilita el trabajo de realizar copias idénticas de la estructura.
-
-- Utilización de tipos como parámetros
-- Teniendo la función ordena(v). Dependerá del tipo de v para generar la función.
+*Código ejemplo del Hola Mundo*:
 
 .. code-block::
 
-    template<class T> void ordena(T v[])  {
-    
-    }
+	void main()  {
+  	    TRISBbits.TRISB0 = 0;            
+  	    LATBbits.LATB0 = 0;    
 
-- Mecanismo que permite usar un tipo como parámetro en una clase o función.
-- Clases genéricas: Es un “constructor” (o creador) de clases (no confundir con el constructor de una clase).
-- Para el diseño de una clase genérica es aconsejable ir de lo particular a lo general.
-- Primero diseñar y depurar una clase referido a un tipo concreto.
-- Libro: El lenguaje de programación C++ de Stroustrup - 13.1 - 13.2 - 13.2.1 - 13.2.2
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  		while(1) {
+    		    LATBbits.LATB0 = ~LATBbits.LATB0;       
+    		    Delay_ms(1000);
+  		}
+	}
 
 
 
