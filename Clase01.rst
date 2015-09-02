@@ -54,6 +54,8 @@ Familias de microcontroladores Microchip
 *DSC (Digital Signal Controller)*
 	- Híbrido MCU/DSP
 	- Controlador digital de señales
+	
+.. figure:: images/clase01/precio_rendimiento.png
 
 *dsPIC (Nombre que utiliza Microchip para referirse a sus DSC)*
 	- PIC de 16 bits (registros de 16 bits)
@@ -92,6 +94,25 @@ Softwares
 	- Última versión 6.2 (febrero 2014)
 	- Desarrollado por MikroElektronika ( http://www.mikroe.com/mikroc/dspic )
 	- MikroElektronika también dispone de placas de desarrollo como la Easy dsPIC que disponemos en el Lab
+	
+	
+Características principales de los DSP
+--------------------------------------
+
+- Arquitectura Harvard: Tiene memorias independientes para:
+	- Memoria de programa
+	- Memoria de datos: A su vez tiene dos espacios independientes para acceso en paralelo (X e Y).
+	- Mejora la arquitectura de von Neumann: Programa y datos en la misma memoria
+
+- Disponen de instrucciones que resuelven algoritmos para procesamiento de señales.
+- Modos de direccionamiento sofisticados.
+- Interrupciones con niveles de prioridad.
+
+- La arquitectura Harvard posee buses independientes para instrucciones y datos.
+	
+.. figure:: images/clase01/harvard.png
+
+ALU (Arithmetic Logic Unit): Realiza operaciones aritméticas
 
 
 *Ejercicio 1*: Regulador de tensión para los dsPIC33F.
