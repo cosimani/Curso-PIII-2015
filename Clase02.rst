@@ -56,7 +56,7 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 
 	}
 
-*Registros para configuración*   	
+**Registros para configuración**
 	
 - IFS0<15:0>, IFS1<15:0>, IFS2<15:0>
 	- Banderas de solicitud de interrupción. (el software debe borrarlo - hay que hacerlo sino sigue levantando la interrupción).
@@ -95,19 +95,16 @@ Secuencia de interrupción
 
 **Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:**
 
-INTCON2bits.
-	INT0EP 
-	INT1EP
-	INT2EP
-		0 - Ascendente
-		1 - Descendente
+INTCON2bits.INT0EP = 0;  // 0 para Ascendente y 1 para Descendente
+INTCON2bits.INT1EP = 0;
+INTCON2bits.INT2EP = 0;
 
 IFS0bits.INT0IF  --- Borramos la bandera
 
 IEC0bits.INT0IE  --- Habilitamos la interrupción
 			
 
-*Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0*
+**Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0**
 
 .. code-block::
     void detectarInt0() org 0x0014  {
