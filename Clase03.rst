@@ -5,37 +5,12 @@
 Clase 03 - PIII 2015 - 19-08-2015
 =================================
 
-
-Manejo del oscilador
-====================
-
-- 3 osciladores primarios (XTL, XT y HS)
-	XTL: Con cristal de cuarzo o resonador cerámico (200kHz y 4MHz)
-	XT: Cristal o resonador (4MHz a 10MHz)
-	HS: Sólo cristal (10MHz a 25MHz)
-
-	- Pines OSC1 y OSC2
-
-- 1 secundario (LP)
-	LP: Cristal o cerámico a 32kHz.
-	- Pines SOSC1 y SOSC2
-
-- 2 internos (FRC y LPRC): Sensibles a la temperatura y voltaje al cual trabaje el dispositivo
-	FRC (Fast RC): Trabaja a 8MHz sin necesidad de conectar un cristal
-	LPRC (Low Power RC): 512kHz. 
-
-- 1 externo (ERC): Sensible a la temperatura y voltaje.
-	ERC: Hasta 4MHz. Necesita de una resistencia y un condensador en OSC1. También se puede conectar a una señal de reloj externa (modo EC).
-
-- PLL para multiplicar la frecuencia interna
-	
+.. figure:: images/manejo_osciladores.png
 
 .. figure:: images/osciladores.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
-
-    Licencia Creative Commons Atribución-CompartirIgual 2.5 Argentina (CC BY-SA 2.5 AR)
-	
+.. figure:: images/calculo_fcy.png
 	
 
 Ejercicio 4 (clase pasada): Una opción para resolverlo.
