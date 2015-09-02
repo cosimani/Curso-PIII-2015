@@ -133,10 +133,11 @@ Secuencia de interrupción
     }
 
 
-*Ejemplo (para dsPIC30F4013):* 
+**Ejemplo (para dsPIC30F4013):**
 El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en el puerto RF6 (INT0). Para cada flanco ascendente el valor en el puerto D se incrementa en 1.
 
 .. code-block::
+
     void deteccionDeInterrupcion() org 0x0014{ // Interrupción en INT0
         LATD++;		// Incrementamos el contador
         IFS0.F0 = 0;      // Decimos que ya atendimos la interrupción
