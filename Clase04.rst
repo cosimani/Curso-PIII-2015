@@ -112,8 +112,10 @@ ADC controlando los momentos de muestreo con el Timer2
         ADCON1bits.ADON = 0;  // ADC Apagado por ahora
         ADCON1bits.ADSIDL = 1;  // No trabaja en modo idle
         ADCON1bits.FORM = 0b00;  // Formato de salida entero
-        ADCON1bits.SSRC = 0b000;  // Para tomar muestras en forma manual. Porque lo vamos a controlar con timer2
-        ADCON1bits.ASAM = 0;  // Adquiere muestra cuando el SAMP se pone en 1. SAMP lo controlamos desde el Timer2.
+        // Para tomar muestras en forma manual. Porque lo vamos a controlar con timer2
+		ADCON1bits.SSRC = 0b000;  
+		// Adquiere muestra cuando el SAMP se pone en 1. SAMP lo controlamos desde el Timer2.
+        ADCON1bits.ASAM = 0;  
 
         ADCON2bits.VCFG = 0b000;  // Referencia con AVdd y AVss
         ADCON2bits.SMPI = 0b0000;  // Lanza interrupción luego de tomar n muestras.
@@ -121,7 +123,8 @@ ADC controlando los momentos de muestreo con el Timer2
 
         // AD1CON3 no se usa ya que tenemos deshabilitado el cálculo del muestreo con ADCS etc.
 
-        ADCHS = 0b0000;  // Muestreo la entrada analógica AN0 contra el nivel de AVss (AN0 es S/H+ y AVss es S/H-)
+		// Muestreo la entrada analógica AN0 contra el nivel de AVss (AN0 es S/H+ y AVss es S/H-)
+        ADCHS = 0b0000;  
 
         ADCON1bits.ADON = 1;// Habilitamos el A/D
     }
