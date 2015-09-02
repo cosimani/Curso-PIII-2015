@@ -43,11 +43,12 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 .. figure:: images/clase02/ivt.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
-   - Cuando una interrupción es atendida, el PC (Program Counter) se carga con la dirección almacenada en la ubicación de vectores en la memoria del programa que corresponde a la interrupción.
+- Cuando una interrupción es atendida, el PC (Program Counter) se carga con la dirección que indica la tabla de vector de interrupción (IVT)
+   
 
-- Escribir una rutina del servicio de interrupción (ISR)
-	- Función void sin parámetros
-	- No puede ser invocada
+*- Escribir una rutina del servicio de interrupción (ISR)*   
+- Función void sin parámetros
+- No puede ser invocada
 
 .. code-block::
 
