@@ -7,14 +7,25 @@ Clase 03 - PIII 2015 - 19-08-2015
 
 .. figure:: images/manejo_osciladores.png
 
-.. ..
-
-.. ..
-
 .. figure:: images/osciladores.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
 .. figure:: images/calculo_fcy.png
+
+
+Ejercicio 1:
+------------
+
+- Definir las siguientes funciones:
+
+	void retardarUnSegundo();
+
+	void retardo(int segundos)
+
+- Con la siguiente línea consumimos un ciclo de instrucción sin hacer nada:
+	
+	asm nop;
+
 	
 
 Ejercicio 4 (clase pasada): Una opción para resolverlo.
