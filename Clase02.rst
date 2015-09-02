@@ -83,7 +83,7 @@ Secuencia de interrupción
 - La IRQ provoca una interrupción si se encuentra habilitado con IECx. 
 - El IVT contiene las direcciones iniciales de las rutinas de interrupción para cada fuente de interrupción.
 
-Interrupciones externas INT0 INT1 y INT2
+*Interrupciones externas INT0 INT1 y INT2*
 
 .. code-block::
 
@@ -93,62 +93,61 @@ Interrupciones externas INT0 INT1 y INT2
 								0x0042 - INT2
     }
 
-- Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:
-	INTCON2bits.
-			INT0EP 
-			INT1EP
-			INT2EP
-					0 - Ascendente
-					1 - Descendente
+*Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:*
+
+INTCON2bits.
+	INT0EP 
+	INT1EP
+	INT2EP
+		0 - Ascendente
+		1 - Descendente
 
 IFS0bits.INT0IF  --- Borramos la bandera
 
 IEC0bits.INT0IE  --- Habilitamos la interrupción
 			
 
-Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0
+*Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0*
 
-void detectarInt0() org 0x0014  {
-  IFS0bits.INT0IF = 0;
-  LATDbits.LATD0 = ~LATDbits.LATD0;
-
-}
-
-void configuracionPuertos()  {
-
-  TRISDbits.TRISD0 = 0;  // Para led Int0
-}
-
-
-void main()  {
-    configuracionPuertos();
-
-    INTCON2bits.INT0EP = 1;
-
-    IEC0bits.INT0IE = 1;
-
-    while(1)  {
+.. code-block::
+    void detectarInt0() org 0x0014  {
+        IFS0bits.INT0IF = 0;
+        LATDbits.LATD0 = ~LATDbits.LATD0;
     }
-}
+
+    void configuracionPuertos()  {
+        TRISDbits.TRISD0 = 0;  // Para led Int0
+    }
+
+    void main()  {
+        configuracionPuertos();
+
+        INTCON2bits.INT0EP = 1;
+
+        IEC0bits.INT0IE = 1;
+
+        while(1)  {
+        }
+    }
 
 
-Ejemplo (para dsPIC30F4013):
+*Ejemplo (para dsPIC30F4013):* 
+El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en el puerto RF6 (INT0). Para cada flanco ascendente el valor en el puerto D se incrementa en 1.
 
-El ejemplo muestra cómo dsPIC reacciona a un flanco de señal ascendente en el puerto RF6 (INT0). Para cada flanco ascendente el valor en el puerto D se incrementa en 1.
+.. code-block::
+    void deteccionDeInterrupcion() org 0x0014{ // Interrupción en INT0
+        LATD++;		// Incrementamos el contador
+        IFS0.F0 = 0;      // Decimos que ya atendimos la interrupción
+    }
 
-void deteccionDeInterrupcion() org 0x0014{ // Interrupción en INT0
-  LATD++;		// Incrementamos el contador
-  IFS0.F0 = 0;      // Decimos que ya atendimos la interrupción
-}
-
-void main(){
-  TRISD = 0;      // Contador de eventos por interrupción
-  TRISA = 0xFFFF; // PORTA para leer el pin RA11
-  IFS0 = 0;       // Interrupción puesta en cero
-  IEC0 = 1;       // Interrupción en el flanco ascendente de INT0 (RA11)
-  while(1) 
-    asm nop;
-}
+    void main(){
+        TRISD = 0;      // Contador de eventos por interrupción
+        TRISA = 0xFFFF; // PORTA para leer el pin RA11
+        IFS0 = 0;       // Interrupción puesta en cero
+        IEC0 = 1;       // Interrupción en el flanco ascendente de INT0 (RA11)
+        while(1) 
+            asm nop;
+    }
 
 
 
