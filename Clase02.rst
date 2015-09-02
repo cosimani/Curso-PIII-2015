@@ -56,7 +56,7 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 
 	}
 
-* Registros para configuración *   	
+*Registros para configuración*   	
 	
 - IFS0<15:0>, IFS1<15:0>, IFS2<15:0>
 	- Banderas de solicitud de interrupción. (el software debe borrarlo - hay que hacerlo sino sigue levantando la interrupción).
@@ -83,7 +83,7 @@ Secuencia de interrupción
 - La IRQ provoca una interrupción si se encuentra habilitado con IECx. 
 - El IVT contiene las direcciones iniciales de las rutinas de interrupción para cada fuente de interrupción.
 
-*Interrupciones externas INT0 INT1 y INT2*
+**Interrupciones externas INT0 INT1 y INT2**
 
 .. code-block::
 
@@ -93,7 +93,7 @@ Secuencia de interrupción
 								0x0042 - INT2
     }
 
-*Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:*
+**Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:**
 
 INTCON2bits.
 	INT0EP 
