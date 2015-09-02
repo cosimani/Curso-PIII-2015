@@ -18,13 +18,13 @@ Ejercicio 1:
 
 - Definir las siguientes funciones:
 
-	void retardarUnSegundo();
+	void retardarUnSegundo()
 
 	void retardo(int segundos)
 
 - Con la siguiente línea consumimos un ciclo de instrucción sin hacer nada:
 	
-	asm nop;
+	asm nop
 
 	
 
