@@ -18,9 +18,9 @@ Ejercicio 1
 
 - Definir las siguientes funciones:
 
-	void retardarUnSegundo()
+	void retardarUnSegundo
 
-	void retardo(int segundos)
+	void retardo
 
 - Con la siguiente línea consumimos un ciclo de instrucción sin hacer nada
 	
