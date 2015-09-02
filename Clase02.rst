@@ -96,7 +96,8 @@ Secuencia de interrupción
 **Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:**
 
 .. code-block::
-	void configuracionPuertos()  {
+
+	void configuracion()  {
 	    INTCON2bits.INT0EP = 0;  // 0 para Ascendente y 1 para Descendente
 	    INTCON2bits.INT1EP = 0;
 	    INTCON2bits.INT2EP = 0;
@@ -110,6 +111,7 @@ Secuencia de interrupción
 **Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0**
 
 .. code-block::
+
     void detectarInt0() org 0x0014  {
         IFS0bits.INT0IF = 0;
         LATDbits.LATD0 = ~LATDbits.LATD0;
