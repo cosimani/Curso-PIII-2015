@@ -7,6 +7,10 @@ Clase 03 - PIII 2015 - 19-08-2015
 
 .. figure:: images/manejo_osciladores.png
 
+.. ..
+
+.. ..
+
 .. figure:: images/osciladores.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
