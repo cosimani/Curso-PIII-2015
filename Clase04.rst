@@ -191,6 +191,38 @@ ADC controlando los momentos de muestreo con el Timer2
         return 0;
     }
 
+Registros
+=========
+
+.. figure:: images/clase04/registro_adc_todo.png
+   :target: http://ww1.microchip.com/downloads/en/devicedoc/70138c.pdf
+
+.. figure:: images/clase04/registro_adc1.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+	        
+.. figure:: images/clase04/registro_adc2.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+			
+.. figure:: images/clase04/registro_adc3.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+			
+.. figure:: images/clase04/registro_adc4.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+
+.. figure:: images/clase04/registro_adc5.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+
+.. figure:: images/clase04/registro_adc6.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+
+
+
+
+
+
+
+
+
 
 
 
