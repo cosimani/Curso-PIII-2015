@@ -2,8 +2,8 @@
 
 .. _rcs_subversion:
 
-Clase 03 - PIII 2015 - 19-08-2015
-=================================
+Clase 03 - PIII 2015
+====================
 
 .. figure:: images/clase03/manejo_osciladores.png
 

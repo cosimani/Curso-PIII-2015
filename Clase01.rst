@@ -3,7 +3,7 @@
 .. _rcs_subversion:
 
 Clase 01 - PIII 2015
-===================
+====================
 
 :Autor: César Osimani
 :Correo: cosimani@ubp.edu.ar

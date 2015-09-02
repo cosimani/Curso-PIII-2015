@@ -36,7 +36,6 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
             Delay_ms(1);
         }
     }
-
 	
 .. figure:: images/clase02/interrupciones.png
 	

@@ -2,8 +2,8 @@
 
 .. _rcs_subversion:
 
-Clase 04 - PIII 2015 - 02-08-2015
-=================================
+Clase 04 - PIII 2015
+====================
 
 .. figure:: images/clase04/manejo_timers.png
 
