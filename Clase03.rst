@@ -13,6 +13,18 @@ Clase 03 - PIII 2015 - 19-08-2015
 .. figure:: images/calculo_fcy.png
 
 
+Ejercicio 1
+-----------
+
+- Definir las siguientes funciones:
+
+	void retardarUnSegundo()
+
+	void retardo(int segundos)
+
+- Con la siguiente línea consumimos un ciclo de instrucción sin hacer nada
+	
+	asm nop
 
 	
 
