@@ -95,13 +95,14 @@ Secuencia de interrupción
 
 **Para elegir lanzar la interrupción con flanco ascendente o descendente hacemos:**
 
-INTCON2bits.INT0EP = 0;  // 0 para Ascendente y 1 para Descendente
-INTCON2bits.INT1EP = 0;
-INTCON2bits.INT2EP = 0;
+.. code-block::
+	INTCON2bits.INT0EP = 0;  // 0 para Ascendente y 1 para Descendente
+	INTCON2bits.INT1EP = 0;
+	INTCON2bits.INT2EP = 0;
 
-IFS0bits.INT0IF  --- Borramos la bandera
+	IFS0bits.INT0IF = 0;  // Borramos la bandera
 
-IEC0bits.INT0IE  --- Habilitamos la interrupción
+	IEC0bits.INT0IE = 1;  // Habilitamos la interrupción
 			
 
 **Ejemplo: Cambia de estado un led en PORTD0 cada vez que se detecta un flanco descendente en INT0**
