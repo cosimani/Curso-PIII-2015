@@ -2,6 +2,196 @@
 
 .. _rcs_subversion:
 
+Clase 03 - PIII 2015 - 19-08-2015
+=================================
+
+
+Manejo del oscilador
+====================
+
+- 3 osciladores primarios (XTL, XT y HS)
+	XTL: Con cristal de cuarzo o resonador cerámico (200kHz y 4MHz)
+	XT: Cristal o resonador (4MHz a 10MHz)
+	HS: Sólo cristal (10MHz a 25MHz)
+
+	- Pines OSC1 y OSC2
+
+- 1 secundario (LP)
+	LP: Cristal o cerámico a 32kHz.
+	- Pines SOSC1 y SOSC2
+
+- 2 internos (FRC y LPRC): Sensibles a la temperatura y voltaje al cual trabaje el dispositivo
+	FRC (Fast RC): Trabaja a 8MHz sin necesidad de conectar un cristal
+	LPRC (Low Power RC): 512kHz. 
+
+- 1 externo (ERC): Sensible a la temperatura y voltaje.
+	ERC: Hasta 4MHz. Necesita de una resistencia y un condensador en OSC1. También se puede conectar a una señal de reloj externa (modo EC).
+
+- PLL para multiplicar la frecuencia interna
+	
+	
+	
+
+Ejercicio 4 (clase pasada): Una opción para resolverlo.
+
+.. code-block::
+
+    int contadorRB0 = 0;
+    int contadorRB1 = 0;
+
+    void main()  {
+        TRISBbits.TRISB0 = 0;
+        TRISBbits.TRISB1 = 0;
+
+        LATBbits.LATB0 = 1;
+        LATBbits.LATB1 = 1;
+
+        while(1)  {
+            contadorRB0++;
+            contadorRB1++;
+
+            if (contadorRB0 >= 250)  {
+                LATBbits.LATB0 = ~LATBbits.LATB0;
+                contadorRB0 = 0;
+            }
+        
+            if (contadorRB1 >= 133)  {
+                LATBbits.LATB1 = ~LATBbits.LATB1;
+                contadorRB1 = 0;
+            }
+        
+            Delay_ms(1);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cálculo de Fcy (Frequency Cycle)
+
+- Fcy es utilizada para calcular el ciclo de máquina (número de instrucciones por segundo)
+- Se deriva de la frecuencia de oscilación Fosc	
+
+ 
+
+- Para dsPIC30F4013
+
+Fcy=  Fosc/4=  (Frec Oscilador x PLL)/4                                   Fcy=  10MHz/4=2,5MHz                              Tcy=  1/2,5MHz=400nseg
+
+
+- Para dsPIC30FJ32MC202
+Fcy=  Fosc/2=  (Frec Oscilador x PLL)/2
+
+
+Ejercicio 1:
+
+- Definir las siguientes funciones:
+
+	void retardarUnSegundo();
+
+	void retardo(int segundos)
+
+	- Con la siguiente línea consumimos un ciclo de instrucción sin hacer nada:
+	
+		asm nop;
+	
+
+Manejo de temporizadores (para dsPIC30F4013)
+
+- Los dsPIC30F tienen temporizadores de 16 bits aunque se pueden combinar para tener 32 bits.
+- Proporcionan una base de tiempo
+
+	- TMRx - Registro contador del temporizador
+	- PRx - Registro de períodos
+	- TxCON - Registros de control (contiene los bits TCS, TSYNC y TGATE)
+	
+- Además, cada uno de los timers tiene bits para control de interrupciones.
+
+	- TxIE - Bit de control de la interrupción Timer
+	- TxIF - Bit de estado de desbordamiento
+	- TxIP<2:2> - Prioridad de la interrupción
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+Ejemplo:
+- Hacerlo parpadear cada cierto números de ciclos haciendo uso de la interrupción del timer.
+
+ 
+
+- Primero configuramos el servicio en la interrupción del timer.
+
+void detectarIntT1() org 0x001a  {
+    LATBbits.LATB0 = !LATBbits.LATB0;
+    IFS0bits.T1IF=0;  // Borramos la bandera de interrupción T1
+}
+
+void main(){
+  TRISBbits.TRISB0 = 0;
+  LATBbits.LATB0 = 0;
+
+  // Modo de operación Timer1
+  T1CON=0x0000;
+
+  // Modo operación Timer1: reloj interno, escala 1:1, empieza cuenta en 0
+  TMR1=0;
+
+  // Cuenta 500 ciclos
+  PR1=500;
+
+  // Interrupciones Timer1, borra Bandera de interrupción
+  IFS0bits.T1IF=0;
+
+  // Habilita interrupción
+  IEC0bits.T1IE=1;
+
+  // Arranca Timer1
+  T1CONbits.TON=1;
+
+  while(1)
+    asm nop;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Clase 02 - PIII 2015
 ====================
 
