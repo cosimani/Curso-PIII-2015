@@ -8,10 +8,13 @@ Clase 04 - PIII 2015 - 02-08-2015
 .. figure:: images/clase04/manejo_timers.png
 
 .. figure:: images/clase04/map_timer1.png
+   :target: http://ww1.microchip.com/downloads/en/devicedoc/70138c.pdf
 
 .. figure:: images/clase04/map_timer23.png
+   :target: http://ww1.microchip.com/downloads/en/devicedoc/70138c.pdf
 
 .. figure:: images/clase04/map_timer45.png
+   :target: http://ww1.microchip.com/downloads/en/devicedoc/70138c.pdf
 
 .. figure:: images/clase04/ejemplo.png
 
