@@ -23,29 +23,29 @@ Clase 04 - PIII 2015 - 02-08-2015
 	}
 
 	void main()  {
-		TRISBbits.TRISB0 = 0;
-		LATBbits.LATB0 = 0;
+	    TRISBbits.TRISB0 = 0;
+	    LATBbits.LATB0 = 0;
 
-		// Modo de operación Timer1
-		T1CON=0x0000;
+	    // Modo de operación Timer1
+	    T1CON=0x0000;
 
-		// Modo operación Timer1: reloj interno, escala 1:1, empieza cuenta en 0
-		TMR1=0;
+	    // Modo operación Timer1: reloj interno, escala 1:1, empieza cuenta en 0
+	    TMR1=0;
 
-		// Cuenta 500 ciclos
-		PR1=500;
+	    // Cuenta 500 ciclos
+	    PR1=500;
 
-		// Interrupciones Timer1, borra Bandera de interrupción
-		IFS0bits.T1IF=0;
+	    // Interrupciones Timer1, borra Bandera de interrupción
+	    IFS0bits.T1IF=0;
 
-		// Habilita interrupción
-		IEC0bits.T1IE=1;
+	    // Habilita interrupción
+	    IEC0bits.T1IE=1;
 
-		// Arranca Timer1
-		T1CONbits.TON=1;
+	    // Arranca Timer1
+	    T1CONbits.TON=1;
 
-		while(1)
-			asm nop;
+	    while(1)
+	       asm nop;
 	}
 
 
