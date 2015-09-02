@@ -138,7 +138,7 @@ El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en 
 
 .. code-block::
 
-    void deteccionDeInterrupcion() org 0x0014{ // Interrupción en INT0
+    void deteccionDeInterrupcion() org 0x0014  {   // Interrupción en INT0
         LATD++;		// Incrementamos el contador
         IFS0.F0 = 0;      // Decimos que ya atendimos la interrupción
     }
@@ -152,10 +152,7 @@ El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en 
             asm nop;
     }
 
-
-
-
-
+*La secuencia es la siguiente:*
 
 - Se utiliza el PORTD para mostrar el número de eventos de interrupción.
 - PORTF como entrada para producir una interrupción cuando en INT0 (RA11) cambie de cero a 1. 
@@ -168,8 +165,6 @@ El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en 
 - Dentro de la función, el software debe poner a cero el bit menos significativo de IFS0. Si no, siempre pensará que hay interrupción.
 - Luego incrementamos en 1 LATD.
 
-Ejercicio:
-- Realizar el mismo ejemplo para dsPIC30F3012 y grabarlo con PICKit2
 
 
 
