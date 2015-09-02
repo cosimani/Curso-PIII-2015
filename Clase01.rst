@@ -167,7 +167,9 @@ ALU (Arithmetic Logic Unit): Realiza operaciones aritméticas
 	}
 
 
+**Regulador de tensión 3.3v (esto para los dsPIC33F)**
 
+.. figure:: images/clase01/regulador.png
 
 
 
