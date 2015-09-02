@@ -56,6 +56,8 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 
 	}
 
+* Registros para configuración *   	
+	
 - IFS0<15:0>, IFS1<15:0>, IFS2<15:0>
 	- Banderas de solicitud de interrupción. (el software debe borrarlo - hay que hacerlo sino sigue levantando la interrupción).
 
@@ -70,6 +72,8 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 		- INTCON1 contiene el control y los indicadores de estado. 
 		- INTCON2 controla la señal de petición de interrupción externa y el uso de la tabla AIVT.
 
+.. figure:: images/clase02/registro_interrupciones.png
+   :target: http://ww1.microchip.com/downloads/en/devicedoc/70138c.pdf
 
 Secuencia de interrupción
 +++++++++++++++++++++++++
