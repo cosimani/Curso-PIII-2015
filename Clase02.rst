@@ -37,15 +37,13 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
         }
     }
 
+	
+.. figure:: images/clase02/interrupciones.png
+	
+.. figure:: images/clase02/ivt.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
-Interrupciones
-==============
-
-- Eventos que hacen al dsPIC dejar de realizar lo que está haciendo y pase a ejecutar otra tarea.
-- Las causas pueden ser diferentes (hasta 45 fuentes): Interrupciones externas, Timers, ADC, UART, etc.
-- 7 niveles de prioridad (1 a 7 a través de los registros IPCx). Con 0 se desactiva la interrupción.
-- Existe una tabla de vector de interrupción (IVT) que nos dice dónde escribir nuestra función que atiende la interrupción.
-- Cuando una interrupción es atendida, el PC (Program Counter) se carga con la dirección almacenada en la ubicación de vectores en la memoria del programa que corresponde a la interrupción.
+   - Cuando una interrupción es atendida, el PC (Program Counter) se carga con la dirección almacenada en la ubicación de vectores en la memoria del programa que corresponde a la interrupción.
 
 - Escribir una rutina del servicio de interrupción (ISR)
 	- Función void sin parámetros
