@@ -30,7 +30,7 @@ Manejo del oscilador
 - PLL para multiplicar la frecuencia interna
 	
 
-.. figure:: /images/oscilador.png
+.. figure:: images/osciladores.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
 
