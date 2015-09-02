@@ -18,11 +18,11 @@ Clase 04 - PIII 2015 - 02-08-2015
 .. code-block::
 
 	void detectarIntT1() org 0x001a  {
-		LATBbits.LATB0 = !LATBbits.LATB0;
-		IFS0bits.T1IF=0;  // Borramos la bandera de interrupción T1
+	    LATBbits.LATB0 = !LATBbits.LATB0;
+	    IFS0bits.T1IF=0;  // Borramos la bandera de interrupción T1
 	}
 
-	void main(){
+	void main()  {
 		TRISBbits.TRISB0 = 0;
 		LATBbits.LATB0 = 0;
 
