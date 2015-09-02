@@ -5,12 +5,12 @@
 Clase 03 - PIII 2015 - 19-08-2015
 =================================
 
-.. figure:: images/manejo_osciladores.png
+.. figure:: images/clase03/manejo_osciladores.png
 
-.. figure:: images/osciladores.png
+.. figure:: images/clase03/osciladores.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
-.. figure:: images/calculo_fcy.png
+.. figure:: images/clase03/calculo_fcy.png
 
 
 Ejercicio 1
