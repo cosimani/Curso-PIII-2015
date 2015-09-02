@@ -164,8 +164,26 @@ El ejemplo muestra cómo el dsPIC reacciona a un flanco de señal ascendente en 
 - Dentro de la función, el software debe poner a cero el bit menos significativo de IFS0. Si no, siempre pensará que hay interrupción.
 - Luego incrementamos en 1 LATD.
 
+Registros
+=========
 
+.. figure:: images/clase04/registro_adc1.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+	        
+.. figure:: images/clase04/registro_adc2.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+			
+.. figure:: images/clase04/registro_adc3.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+			
+.. figure:: images/clase04/registro_adc4.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
+.. figure:: images/clase04/registro_adc5.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+
+.. figure:: images/clase04/registro_adc6.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
 
 
 
