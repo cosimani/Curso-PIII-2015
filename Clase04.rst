@@ -105,7 +105,7 @@ ADC controlando los momentos de muestreo con el Timer2
 
 .. code-block::
 
-	void initADC()  {
+    void initADC()  {
 	    ADPCFG = 0xFFFE; // Elije la entrada analógica a convertir en este caso AN0.
 	    // Con cero se indica entrada analógica y con 1 sigue siendo entrada digital.
 
@@ -127,7 +127,7 @@ ADC controlando los momentos de muestreo con el Timer2
         ADCHS = 0b0000;  
 
         ADCON1bits.ADON = 1;// Habilitamos el A/D
-    }
+	}
 
     void detectarIntT2() org 0x0020  {
         IFS0bits.T2IF=0;  // Borramos la bandera de interrupción T2
