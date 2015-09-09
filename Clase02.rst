@@ -41,6 +41,10 @@ Ejercicio 4 (clase pasada): Una opción para resolverlo.
 	
 .. figure:: images/clase02/ivt.png
    :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70046E.pdf
+   
+.. figure:: images/clase02/ivt_dspic33F.png
+   :target: http://ww1.microchip.com/downloads/en/DeviceDoc/70214C.pdf
+   
 
 - Cuando una interrupción es atendida, el PC (Program Counter) se carga con la dirección que indica la tabla de vector de interrupción (IVT)
    
