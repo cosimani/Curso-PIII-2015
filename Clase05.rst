@@ -23,13 +23,14 @@ Clase 05 - PIII 2015
 		- *Entrega de avance de trabajo final:* Hasta el viernes 11 hay tiempo para presentar la propuesta y el 16 lo presentan. 
 	- Temas: Interrupciones, Timers, cálculos de tiempos, ADC manual.
 	
-Ejemplo: **ADC controlando los momentos de muestreo con señal cuadrada externa**
+Ejemplo: ADC controlando los momentos de muestreo con señal cuadrada externa
 ========
 
 - Para dsPIC33FJ32MC202
 - Con flanco descendente de la señal cuadrada en el pin INT0
 - Cristal de 10MHz
 - ADC de 10 bits
+- Entrada analógica en AN0
 
 .. code-block::
 
