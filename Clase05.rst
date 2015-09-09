@@ -19,8 +19,8 @@ Clase 05 - PIII 2015
 **Primer Parcial**
 	- Fecha: 16 de septiembre
 	- Modalidad (2 opciones): 
-		- Examen en PC: Se rinde con un trabajo práctico ese mismo 16 de septiembre en los laboratorios de informática. Con Proteus y mikroC.
-		- Entrega de avance de trabajo final: Hasta el viernes 11 hay tiempo para presentar la propuesta y el 16 lo presentan. 
+		- *Examen en PC:* Se rinde con un trabajo práctico ese mismo 16 de septiembre en los laboratorios de informática. Con Proteus y mikroC.
+		- *Entrega de avance de trabajo final:* Hasta el viernes 11 hay tiempo para presentar la propuesta y el 16 lo presentan. 
 	- Temas: Interrupciones, Timers, Cálculos de tiempos, ADC manual.
 
 
