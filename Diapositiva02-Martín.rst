@@ -7,7 +7,7 @@ Diapositiva 02 - PIII 2015
 
 **Filtros activos**
 
-.. figure:: resources/diapositivas/portada022.png
+.. figure:: resources/diapositivas/portada02.png
 	:target: resources/diapositivas/02-filtros_activos.pdf
 
 
