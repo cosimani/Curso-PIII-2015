@@ -10,6 +10,7 @@ Diapositiva 01 - PIII 2015
 .. figure:: resources/diapositivas/portada01.png
 	:target: resources/diapositivas/01-filtros.pdf
 
+	
 
 
 
