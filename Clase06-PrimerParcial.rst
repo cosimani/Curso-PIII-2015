@@ -247,5 +247,15 @@ Primer Parcial - versión 2
 		return 0;
 	}
 
+Primer Parcial - versión 3 y versión 4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+**Las versiones 3 y 4 del parcial son muy similares a la versión 1 y 2**
+
+.. figure:: images/clase06/primer_parcial_3.png
+   :target: images/clase06/primer_parcial_3.pdf
+   
+.. figure:: images/clase06/primer_parcial_4.png
+   :target: images/clase06/primer_parcial_4.pdf
+   
 
