@@ -13,6 +13,9 @@ Clase 07 - PIII 2015
 
 .. figure:: images/clase07/ejemplo1_2.png
 
+.. figure:: images/clase07/planilla_excel.png
+   :target: resources/clase07/Generador.xlsx
+
 .. code-block:: c
 
 	int pos = 0;
@@ -85,7 +88,6 @@ Clase 07 - PIII 2015
 
 		 return 0;
 	}
-
 
 **¿Cómo visualizamos la señal generada? Con un DAC R-2R**
 
