@@ -15,6 +15,8 @@ Clase 07 - PIII 2015
 
 .. figure:: images/clase07/planilla_excel.png
    :target: resources/clase07/Generador.xlsx
+   
+.. figure:: images/clase07/calculo_timer2.png   
 
 .. code-block:: c
 
@@ -92,6 +94,16 @@ Clase 07 - PIII 2015
 **¿Cómo visualizamos la señal generada? Con un DAC R-2R**
 
 .. figure:: images/clase07/dac_r_2r.png
+
+**Ejercicio 1:**
+
+- Generar una señal de 6Hz pensado para aplicar un efecto trémolo (variación periódica del volumen) a una señal de audio que está siendo muestreada a 4kHz.
+
+**Ejercicio 2:**
+
+- Muestrear una señal de audio y aplicar el trémolo anterior.
+
+
 
 
 
