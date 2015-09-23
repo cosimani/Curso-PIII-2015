@@ -101,6 +101,12 @@ Clase 07 - PIII 2015
 
 **Ejercicio 2:**
 
+- Aplicar el trémolo de 4Hz a la señal generada de 100Hz.
+
+.. figure:: images/clase07/captura_tremolo.png
+
+**Ejercicio 3:**
+
 - Muestrear una señal de audio y aplicar el trémolo anterior.
 
 
