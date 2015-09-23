@@ -97,7 +97,7 @@ Clase 07 - PIII 2015
 
 **Ejercicio 1:**
 
-- Generar una señal de 6Hz pensado para aplicar un efecto trémolo (variación periódica del volumen) a una señal de audio que está siendo muestreada a 4kHz.
+- Generar una señal de 4Hz pensado para aplicar un efecto trémolo (variación periódica del volumen) a una señal de audio que está siendo muestreada a 4kHz.
 
 **Ejercicio 2:**
 
