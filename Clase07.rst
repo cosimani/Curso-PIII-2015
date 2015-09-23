@@ -95,6 +95,8 @@ Clase 07 - PIII 2015
 
 .. figure:: images/clase07/dac_r_2r.png
 
+.. figure:: images/clase07/dac_proteus.png
+
 **Ejercicio 1:**
 
 - Generar una señal de 4Hz pensado para aplicar un efecto trémolo (variación periódica del volumen) a una señal de audio que está siendo muestreada a 4kHz.
