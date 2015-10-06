@@ -23,13 +23,15 @@ Clase 08 - PIII 2015
 
 **Ejercicio 2:** Adaptar el programa para el dsPIC33FJ32MC202 y controlarlo en Proteus.
 
+**Resolución Ejercicio 1**
+
 .. code-block:: c
 
 	unsigned int contador = 0;
 
-	void detectarIntADC() org 0x002a  {
+	void detectar_adc() org 0x002a  {
 	    contador = contador + 1;
-	    if (contador > 2000)  {
+	    if (contador > 2000)  {  // Para que D1 cambie de estado cada 1 segundo
 	        LATDbits.LATD1 = ~LATDbits.LATD1;
 	        contador = 0;
 	    }
