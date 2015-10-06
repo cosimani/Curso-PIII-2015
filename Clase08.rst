@@ -37,16 +37,16 @@ Clase 08 - PIII 2015
 	    IFS0bits.ADIF = 0;
 	}
 
-	void initADC()  {
+	void config_adc()  {
 	    ADPCFG = 0xFFFD;  // Elegimos la entrada analógica
 
-	    ADCON1bits.ADSIDL = 1;  // No trabaja en modo IDLE
+	    ADCON1bits.ADSIDL = 1;  // No trabaja en modo IDLE (modo bajo consumo - CPU off, Peripherals on)
 	    ADCON1bits.FORM = 0b00;  // Formato de salida entero
-	    ADCON1bits.SSRC = 0b111;  // Muestreo automático
+	    ADCON1bits.SSRC = 0b111;  // Muestreo automatico
 	    ADCON1bits.ASAM = 1;  // Comienza a muestrear luego de la conversion anterior
 
 	    ADCON2bits.VCFG = 0b000;  // Referencia AVdd y AVss
-	    ADCON2bits.SMPI = 0b0000;  // Lanza interrupción luego de n muestras
+	    ADCON2bits.SMPI = 0b0000;  // Lanza interrupcion luego de n muestras
 	    // 0b0000 - 1 muestra / 0b0001 - 2 muestras / 0b0010 - 3 muestras
 
 	    ADCON3bits.SAMC = 31;
@@ -66,7 +66,7 @@ Clase 08 - PIII 2015
 	void main()  {
 	    configuracionPuertos();
 
-	    initADC();
+	    config_adc();
 
 	    IEC0bits.ADIE = 1;
 
