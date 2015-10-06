@@ -178,18 +178,18 @@ Programación de filtros
 
 	    LATBbits.LATB14 = 1;  // Deshabilitar el DAC
 
-	    LATBbits.LATB13=((unsigned int)valorActual & 0b0000100000000000) >> 11;
-	    LATBbits.LATB12=((unsigned int)valorActual & 0b0000010000000000) >> 10;
-	    LATBbits.LATB11=((unsigned int)valorActual & 0b0000001000000000) >> 9;
-	    LATBbits.LATB10=((unsigned int)valorActual & 0b0000000100000000) >> 8;
-	    LATBbits.LATB9=((unsigned int)valorActual &  0b0000000010000000) >> 7;
-	    LATBbits.LATB8=((unsigned int)valorActual &  0b0000000001000000) >> 6;
-	    LATBbits.LATB6=((unsigned int)valorActual &  0b0000000000100000) >> 5;
-	    LATBbits.LATB5=((unsigned int)valorActual &  0b0000000000010000) >> 4;
-	    LATBbits.LATB4=((unsigned int)valorActual &  0b0000000000001000) >> 3;
-	    LATBbits.LATB3=((unsigned int)valorActual &  0b0000000000000100) >> 2;
-	    LATBbits.LATB2=((unsigned int)valorActual &  0b0000000000000010) >> 1;
-	    LATBbits.LATB1=((unsigned int)valorActual &  0b0000000000000001) >> 0;
+	    LATBbits.LATB13 = ((unsigned int)valorActual & 0b0000100000000000) >> 11;
+	    LATBbits.LATB12 = ((unsigned int)valorActual & 0b0000010000000000) >> 10;
+	    LATBbits.LATB11 = ((unsigned int)valorActual & 0b0000001000000000) >> 9;
+	    LATBbits.LATB10 = ((unsigned int)valorActual & 0b0000000100000000) >> 8;
+	    LATBbits.LATB9 = ((unsigned int)valorActual &  0b0000000010000000) >> 7;
+	    LATBbits.LATB8 = ((unsigned int)valorActual &  0b0000000001000000) >> 6;
+	    LATBbits.LATB6 = ((unsigned int)valorActual &  0b0000000000100000) >> 5;
+	    LATBbits.LATB5 = ((unsigned int)valorActual &  0b0000000000010000) >> 4;
+	    LATBbits.LATB4 = ((unsigned int)valorActual &  0b0000000000001000) >> 3;
+	    LATBbits.LATB3 = ((unsigned int)valorActual &  0b0000000000000100) >> 2;
+	    LATBbits.LATB2 = ((unsigned int)valorActual &  0b0000000000000010) >> 1;
+	    LATBbits.LATB1 = ((unsigned int)valorActual &  0b0000000000000001) >> 0;
 
 	    LATBbits.LATB14 = 0;  // Habilitar el DAC
 	}
