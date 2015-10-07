@@ -176,18 +176,18 @@ Programación de filtros
 
 	    valorActual = yn + 2048;
 
-        LATBbits.LATB2 =   ((unsigned int)valorActual & 0b0000100000000000) >> 11;
-        LATBbits.LATB3 =   ((unsigned int)valorActual & 0b0000010000000000) >> 10;
-        LATBbits.LATB4 =   ((unsigned int)valorActual & 0b0000001000000000) >> 9;
-        LATBbits.LATB5 =   ((unsigned int)valorActual & 0b0000000100000000) >> 8;
-        LATBbits.LATB6 =  ((unsigned int)valorActual &  0b0000000010000000) >> 7;
-        LATBbits.LATB7 =  ((unsigned int)valorActual &  0b0000000001000000) >> 6;
-        LATBbits.LATB8 =  ((unsigned int)valorActual &  0b0000000000100000) >> 5;
-        LATBbits.LATB9 =  ((unsigned int)valorActual &  0b0000000000010000) >> 4;
-        LATBbits.LATB10 = ((unsigned int)valorActual &  0b0000000000001000) >> 3;
-        LATBbits.LATB11 = ((unsigned int)valorActual &  0b0000000000000100) >> 2;
-        LATBbits.LATB12 = ((unsigned int)valorActual &  0b0000000000000010) >> 1;
-        LATBbits.LATB13 = ((unsigned int)valorActual &  0b0000000000000001) >> 0;
+	    LATBbits.LATB2 =   ((unsigned int)valorActual & 0b0000100000000000) >> 11;
+	    LATBbits.LATB3 =   ((unsigned int)valorActual & 0b0000010000000000) >> 10;
+	    LATBbits.LATB4 =   ((unsigned int)valorActual & 0b0000001000000000) >> 9;
+	    LATBbits.LATB5 =   ((unsigned int)valorActual & 0b0000000100000000) >> 8;
+	    LATBbits.LATB6 =  ((unsigned int)valorActual &  0b0000000010000000) >> 7;
+	    LATBbits.LATB7 =  ((unsigned int)valorActual &  0b0000000001000000) >> 6;
+	    LATBbits.LATB8 =  ((unsigned int)valorActual &  0b0000000000100000) >> 5;
+	    LATBbits.LATB9 =  ((unsigned int)valorActual &  0b0000000000010000) >> 4;
+	    LATBbits.LATB10 = ((unsigned int)valorActual &  0b0000000000001000) >> 3;
+	    LATBbits.LATB11 = ((unsigned int)valorActual &  0b0000000000000100) >> 2;
+	    LATBbits.LATB12 = ((unsigned int)valorActual &  0b0000000000000010) >> 1;
+	    LATBbits.LATB13 = ((unsigned int)valorActual &  0b0000000000000001) >> 0;
 	}
 
 	void detectarIntT2() org 0x0022  {
@@ -220,18 +220,18 @@ Programación de filtros
 	}
 
 	void configPuertos()  {
-        TRISBbits.TRISB2 = 0;
-        TRISBbits.TRISB3 = 0;
-        TRISBbits.TRISB4 = 0;
-        TRISBbits.TRISB5 = 0;
-        TRISBbits.TRISB6 = 0;
-        TRISBbits.TRISB7 = 0;
-        TRISBbits.TRISB8 = 0;
-        TRISBbits.TRISB9 = 0;
-        TRISBbits.TRISB10 = 0;
-        TRISBbits.TRISB11 = 0;
-        TRISBbits.TRISB12 = 0;
-        TRISBbits.TRISB13 = 0;
+	    TRISBbits.TRISB2 = 0;
+	    TRISBbits.TRISB3 = 0;
+	    TRISBbits.TRISB4 = 0;
+	    TRISBbits.TRISB5 = 0;
+	    TRISBbits.TRISB6 = 0;
+	    TRISBbits.TRISB7 = 0;
+	    TRISBbits.TRISB8 = 0;
+	    TRISBbits.TRISB9 = 0;
+	    TRISBbits.TRISB10 = 0;
+	    TRISBbits.TRISB11 = 0;
+	    TRISBbits.TRISB12 = 0;
+	    TRISBbits.TRISB13 = 0;
 
 	    TRISBbits.TRISB15=0;  // Debug T2
 	}
