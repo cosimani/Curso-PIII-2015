@@ -249,7 +249,10 @@ Programación de filtros
 	    }
 	}
 
+**Ejercicio 3:** 
 
+- Programar esto y controlar en Proteus. 
+- Analizar si la frecuencia de muestreo es la misma con el ADC encendido y apagado. Es decir, realizando el procesamiento de la señal o no.
 
 
 
