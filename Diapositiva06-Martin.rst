@@ -5,15 +5,11 @@
 Diapositiva 06 - PIII 2015
 ==========================
 
-**Comparación de filtros**
+**Filtros Recursivos**
 
-.. figure:: resources/diapositivas/portada07.png
-	:target: resources/diapositivas/07-filtros_comparacion.pdf
+.. figure:: resources/diapositivas/portada06.png
+	:target: resources/diapositivas/06-filtros_recursivos.pdf
 
-**Referencia de bolsillo**
-
-.. figure:: resources/diapositivas/pocket_reference.png
-	:target: resources/diapositivas/pocket_reference.pdf
 
 
 
