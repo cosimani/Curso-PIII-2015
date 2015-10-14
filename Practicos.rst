@@ -44,7 +44,7 @@ Prácticos - PIII 2015
 
 **Ejercicio 4:**
 
-- Programar en un dsPIC33FJ32MC202 un filtro pasa bajos (Fs = 3000 - Fc = 200Hz).
+- Programar en un dsPIC33FJ32MC202 un filtro pasa bajos (Fs = 3kHz - Fc = 200Hz).
 - Usar un DAC R-2R.
 - Colocar a la entrada un generador de señal y un osciloscopio a la salida.
 
