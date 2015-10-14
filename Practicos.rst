@@ -37,7 +37,7 @@ Prácticos - PIII 2015
 
 **Ejercicio 3:**
 
-- Realizar cálculo para muestrear la voz humana con un ADC automático con el dsPIC33FJ32MC202.
+- Muestrear la voz humana con un ADC automático con el dsPIC33FJ32MC202.
 - Entregar los cálculos realizados para la obtener la frecuencia de muestreo.
 - Como señal de audio de entrada utilizar un archivo de audio en Proteus.
 - Usar un DAC R-2R.
