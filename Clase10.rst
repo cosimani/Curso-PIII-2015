@@ -59,13 +59,7 @@ Clase 10 - PIII 2015
 - Es probable que el más útil de los circuitos es el circuito amplificador sumador
 - Ejemplo: sumador de tres voltajes de entrada, cada uno multiplicado por un factor de ganancia constante
 
-
-
-
-
-
-
-
+.. figure:: images/clase10/sumador.png
 
 - El voltaje de salida puede expresarse como:
 
