@@ -47,6 +47,42 @@ Clase 10 - PIII 2015
 
 - Video sobre cómo utilizar el generador de señal (https://www.youtube.com/watch?v=qCRcNYbqBxs)
 
+**Amplificador operacional**
+
+- Entrada diferencial y una ganancia muy alta (generalmente mayor que 100)
+- En general se alimenta con fuentes positivas y negativas (permite excursiones tanto por arriba como por debajo tierra)
+- Su nombre proviene de una de sus utilidades básicas, como lo son realizar operaciones matemáticas
+- Un amplificador operacional ideal tendría ganancia infinita y ninguna corriente de entrada
+
+**Sumador**
+
+- Es probable que el más útil de los circuitos es el circuito amplificador sumador
+- Ejemplo: sumador de tres voltajes de entrada, cada uno multiplicado por un factor de ganancia constante
+
+
+
+
+
+
+
+
+
+- El voltaje de salida puede expresarse como:
+
+.. code-block:: 
+
+	Vo = (Rf/R1)V1 + (RF/R2)V2 + (Rf/R3)V3
+
+**Ejercicio 1:**
+- Utilizar un 741 ( datasheet en: http://www.ti.com/lit/ds/symlink/ua741.pdf )para sumar dos señales (una senoidal y ruido)
+- Hacerlo en proteus
+- Luego en protoboard con los generadores de señales
+
+**Ejercicio 2:**
+- Utilizar un 741 para agregar un offset a una señal de audio
+- Hacerlo en Proteus con un archivo WAV
+- Luego en protoboard sacando el audio del celular o laptop
+
 
 
 
