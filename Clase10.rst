@@ -5,7 +5,8 @@
 Clase 10 - PIII 2015
 ====================
 
-**Grabación de dsPIC con Pickit 3**
+Grabación de dsPIC con Pickit 3
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Descargamos aplicativo desde: http://www.microchip.com/pagehandler/en-us/devtools/dev-tools-parts.html
 
@@ -52,7 +53,8 @@ Clase 10 - PIII 2015
 - Hacer un Hola Mundo en mikroC simplemente para hacer parpadear un led. Escribir el programa en mikroC, compilar para generar el hex, grabarlo con el PicKit 3 y por último probarlo en la placa.
 
 
-**Amplificador operacional**
+Amplificador operacional
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 - Entrada diferencial y una ganancia muy alta (generalmente mayor que 100)
 - En general se alimenta con fuentes positivas y negativas (permite excursiones tanto por arriba como por debajo tierra)
