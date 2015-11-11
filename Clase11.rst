@@ -74,20 +74,26 @@ Clase 11 - PIII 2015
 	// dsPIC30F4013
 	// Placa Easy dsPIC 4
 	// Entrada analogica AN8 - VRef es AVdd y AVss - 
-	// Detecta las frecuencias 100 Hz, 200 Hz, 300 Hz, ..., 6300 Hz publicando el resultado en binario en los puertos RB0-RB5 (valores desde 1 al 63)
+	// Detecta las frecuencias 100 Hz, 200 Hz, 300 Hz, ..., 6300 Hz
+	// Publica el resultado en binario en los puertos RB0-RB5 (valores desde 1 al 63)
 
 	const unsigned long CANT_MUESTRAS = 128;  // 128 pares de valores [Re, Im]
 	const unsigned long FREC_MUESTREO  = 12800;  // Frecuencia de muestreo.
 
 	unsigned Samples[CANT_MUESTRAS * 2];  // Capacidad para 256. Porque son 128 pares
 
-	// La funcion FFT requiere que las muestras se almacenen en el bloque de datos Y. Este bloque de memoria es una caracteristica
-	// de los dsPIC que permite realizar operaciones en una sola instruccion, lo que aumenta la velocidad de calculo.
+	// La funcion FFT requiere que las muestras se almacenen en el bloque de datos Y. 
+	// Este bloque de memoria es una caracteristica de los dsPIC que permite realizar 
+	// operaciones en una sola instruccion, lo que aumenta la velocidad de calculo.
 	ydata unsigned InputSamples[CANT_MUESTRAS * 2];
 
 	unsigned freq = 0;
-	unsigned globali = 0;  // Es un indice para llevar la cuenta de cuantas muestras vamos guardando en Samples.
-	char listo = 0;  // Es una bandera para saber si ya se encuentra listo el procesamiento FFT para mostrar el resultado.
+	
+	// Es un indice para llevar la cuenta de cuantas muestras vamos guardando en Samples.
+	unsigned globali = 0;  
+	
+	// Bandera para saber si ya se encuentra listo el procesamiento FFT para mostrar el resultado.
+	char listo = 0;  
 
 	void configADC()  {
 	    ADPCFG = 0b01111111;  // elegimos AN8 como entrada para muestras
@@ -112,11 +118,14 @@ Clase 11 - PIII 2015
 	    unsigned i = 0;  // Solo como indice para ir avanzando sobre InputSamples
 	    float    ReFloat, ImFloat, amplitud;
 
-	    k = 0;  // La k corresponde al componente, k=0 para la continua, k=1 para 100 Hz, k=2 para 200 Hz, etc. hasta k=63 para 6300 Hz
+		// La k corresponde al componente, k=0 para la continua, k=1 para 100 Hz, 
+		// k=2 para 200 Hz, etc. hasta k=63 para 6300 Hz
+	    k = 0;  
 	    max = 0;  // Almacena el valor maximo de la amplitud de la muestra DFT
 	    freq = 0;  // Reset current max. frequency for new reading
 
-	    // 63 ciclos porque no podria muestrear mas de 63 * 100 Hz = 6300 Hz (que es la mitad de la frecuencia de muestreo)
+	    // 63 ciclos porque no podria muestrear mas de 63 * 100 Hz = 6300 Hz 
+		// (que es la mitad de la frecuencia de muestreo)
 	    while (k < (CANT_MUESTRAS / 2) )  {
 	        Re = InputSamples[i++];  // Parte Real de la muestra DFT
 	        Im = InputSamples[i++];  // Parte Imaginaria de la muestra DFT
@@ -124,8 +133,11 @@ Clase 11 - PIII 2015
 	        ReFloat = Fract2Float(Re);  // Conversion a float
 	        ImFloat = Fract2Float(Im);  // Conversion a float
 
-	        amplitud = sqrt(ReFloat * ReFloat + ImFloat * ImFloat);  // Amplitud de la actual muestra DFT
-	        amplitud  = amplitud * CANT_MUESTRAS;  // DFT esta en escala 1/amplitud, por eso lo volvemos a escala
+			// Amplitud de la actual muestra DFT
+	        amplitud = sqrt(ReFloat * ReFloat + ImFloat * ImFloat);  
+			
+			// DFT esta en escala 1/amplitud, por eso lo volvemos a escala
+	        amplitud  = amplitud * CANT_MUESTRAS;  
 
 	        if (k == 0)
 	            amplitud = 0;  // Elimina la continua
@@ -135,7 +147,9 @@ Clase 11 - PIII 2015
 	            freq = k;  // Almacenamos el componente con mayor potencia
 	        }
 
-	        k++;  // Avanzamos de a un componente. En este caso, nos desplzamos 100 Hz cada vez que incrementamos k
+			// Avanzamos de a un componente. 
+			// En este caso, nos desplzamos 100 Hz cada vez que incrementamos k
+	        k++;  
 	    }
 
 	    // Con esta linea freq tomaria los valores en Hz de la frecuencia con mas potencia.
@@ -171,8 +185,13 @@ Clase 11 - PIII 2015
 	    if (globali >= (CANT_MUESTRAS * 2) )  {
 	        globali = 0;
 	        if (!listo)  {  // Todavia no tenemos suficientes muestras
-	            memcpy(InputSamples, Samples, CANT_MUESTRAS * 2);  // Copiamos las muestras del ADC hacia el bloque de memoria Y
-	            listo = 1;  // Ya estamos listos para aplicar FFT. Esto habilita el uso de la funcion FFT en la funcion main()
+			
+			    // Copiamos las muestras del ADC hacia el bloque de memoria Y
+	            memcpy(InputSamples, Samples, CANT_MUESTRAS * 2);  
+				
+				// Ya estamos listos para aplicar FFT. 
+				// Esto habilita el uso de la funcion FFT en la funcion main()
+	            listo = 1;  
 	        }
 	    }
 	}
