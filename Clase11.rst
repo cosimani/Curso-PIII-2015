@@ -248,3 +248,13 @@ Clase 11 - PIII 2015
 	    }
 	}
 
+**Ejercicio 1:** 
+
+- Elejir la frecuencia de una cuerda de la guitarra y adaptar el programa para hacer un afinador de esa cuerda.
+
+**Ejercicio 2:** 
+
+- Que la salida en los puertos RB muestre directamente la frecuencia y no la componente k.
+
+
+
