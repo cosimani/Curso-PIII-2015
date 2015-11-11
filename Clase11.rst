@@ -69,7 +69,7 @@ Clase 11 - PIII 2015
 
 **Ejemplo 2:** El cálculo del ejemplo anterior se encuentra optimizado dentro de la biblioteca de funciones de MikroC y se utiliza de la siguiente manera:
 
-	- Video demostración: https://www.youtube.com/watch?v=n_HLYY41g1E
+- Video demostración: https://www.youtube.com/watch?v=n_HLYY41g1E
 
 .. code-block:: c
 
